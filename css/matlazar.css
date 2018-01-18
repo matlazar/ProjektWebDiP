@@ -1,0 +1,492 @@
+html,body{
+    background-color: #e6e6e6;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    background-image: url("../img/logo.png");
+    background-size: 200px 200px;
+    background-color: #333333;
+    color: white;
+    background-repeat: no-repeat;
+    text-align:center;
+    font-family: serif;
+    font-size: 300%;
+    float: left;
+    width: 100%;
+    height: 200px;
+}
+
+#navigacija{
+    clear: both;
+}
+
+.desno{
+    float:right;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b35900;
+}
+
+li {
+
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+}
+
+li a  {
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #333333;
+	text-align: left;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.footer{
+    clear: both;
+    background-color: #333333;
+    color: white;
+    text-align:center;
+    font-family: serif;
+    font-size: 200%;
+    float: left;
+    width: 100%;
+    height: 15%;
+}
+
+.glavnasekcija{
+    background-color: #e6e6e6;
+    float: left;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+
+}
+
+.prijava { 
+    background: #b35900;
+    margin: 1% 1%;
+    padding: 5% 5%;
+    float:left;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 25%;
+    height: 100px;
+    border-radius: 30px;
+    overflow: no-display;
+}
+
+.registracija { 
+    background: #b35900;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    border-radius: 30px;
+    position : absolute;    
+    width    : 65%;
+    height   : 95%;
+    left     : 20%;
+    right    : 20%;
+    top      : 45%;
+    margin-left : -100px; 
+    margin-top  : -100px; 
+    overflow: auto;
+}
+
+.knjiznice {
+    display: inline;
+    float:left;
+    background: #b35900;
+    margin: 1% 1%;
+    padding: 2% 2%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 50%;
+    border-radius: 30px;
+    overflow: no-display;
+}
+
+.knjiznice2 {
+    display: inline;
+    float:left;
+    background: #b35900;
+    margin: 1% 1%;
+    padding: 20% 2%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 50%;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.odabirModeratora{
+    display: inline;
+    float:left;
+    margin: 1% 1%;
+    height:320px;
+    background: #b35900;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 22%;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.dodovanjeKnjiznice{
+    float:left;
+    background: #b35900;
+    margin: 1% 1%;
+    height: 320px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 22%;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.grad{
+    float:left;
+    background: #e6e6e6;
+    margin: 1% 1%;
+    height: 400px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 40%;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.grad2{
+    float:left;
+    background: #e6e6e6;
+    margin: 1% 1%;
+    height: 600px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 50%;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.knjiznica{
+    float:right;
+    background: #b35900;
+    margin: 1% 4.2%;
+    height: 710px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 60%;
+    border-radius: 30px;
+    overflow: auto;
+
+}
+
+.ispis_posudbe{
+    float:right;
+    background: #b35900;
+    margin: 1% 0%;
+    height: 750px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 70%;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.dodajAutore{
+    display: inline;
+    float:right;
+    margin: 1% 1%;
+    height:670px;
+    background: #b35900;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 22%;
+    border-radius: 30px;
+    overflow: auto;
+}
+.kategorije{
+    display: inline;
+    float:left;
+    margin: 1% 1%;
+    height:750px;
+    background: #b35900;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 25%;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.lajk{
+    display: inline;
+    float:left;
+    margin: 1% 1%;
+    height:670px;
+    background: #b35900;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 28%;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.knjiznice2 {
+    display: inline;
+    float:left;
+    background: #b35900;
+    margin: 1% 1%;
+    height: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 60%;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.lajk2{
+    float:left;
+    background: #e6e6e6;
+    margin: 1% 1%;
+    height: 280px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 95%;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.ispod{
+    clear:both;
+}
+
+
+
+.h3 {
+    background-color: #333333;
+    margin-top: -15%;
+    text-align: center;
+    color: white;
+}
+
+.h4{
+    background-color: #333333;
+    font-size: 26pt;
+    text-align: center;
+    color: white;
+}
+
+.unos{
+    position: relative;
+    float: right;
+    border-radius: 10px;
+    height: 25px;
+    border-color: #333333;
+}
+
+.labele{
+    position: relative;
+    float:left;
+    width: 50%;
+    font-size: 14pt;
+}
+
+.unosRegistracija{
+    border-radius: 10px;
+    height: 25px;
+    width: 25%;
+    border-color: #333333;
+    float:left;
+}
+
+.labeleRegistracija{
+    width:180px;
+    clear:left;
+    float:left;
+    text-align:right;
+    padding-right:10px;
+    font-size: 16pt;
+}
+
+.unosModerator{
+    width: 50%;
+    font-size: 14pt;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.posudbe{
+    display: inline;
+    float:left;
+    margin: 2% 10%;
+    height:750px;
+    background: #b35900;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333333; 
+    width: 80%;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.odrediPosudbu{
+    display: inline;
+    float:left;
+    margin: 2% 1%;
+    height:300px;
+    background: #e6e6e6;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #333333; 
+    width: 47.5%;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.cmbBox{
+   border-radius: 10px;
+   height: 25px;
+   width: 60%;
+   border-color: #333333; 
+}
+
+#submit1{
+    height: 25px;
+    float:left;
+    width: 25%;
+    clear:both;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+#reset1{
+    clear:both;
+    height: 25px;
+    float:left;
+    width: 25%;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+.submit{
+    height: 25px;
+    float:left;
+    width: 150px;
+    clear:both;
+    border-radius: 10px;
+}
+
+.reset{
+    height: 25px;
+    float:left;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.crveno{
+    background-color: red;
+    border-radius: 10px;
+    height: 25px;
+    width: 25%;
+    border-color: #333333;
+    float:left;
+}
+
+.zeleno{
+    background-color: greenyellow;
+    border-radius: 10px;
+    height: 25px;
+    width: 25%;
+    border-color: #333333;
+    float:left;
+}
+
+.pogreska{
+    color: red;
+}
+
+.virtualno{
+    text-decoration: none;
+    color:#111;
+    
+}
+
+.virtualno:hover{
+    background-color: #4CAF50;
+}
+
+th{
+    background-color: #333333;
+    color: white;
+}

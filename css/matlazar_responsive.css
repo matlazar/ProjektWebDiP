@@ -1,0 +1,650 @@
+@media screen and (max-width:360px) and (max-height:640px){
+    header {
+        background-image: url("../img/logo.png");
+        background-size: 90px 90px;
+        background-color: #333333;
+        color: white;
+        background-repeat: no-repeat;
+        text-align: match-parent;
+        font-family: serif;
+        font-size: 15pt;
+        float: left;
+        width: 100%;
+        height: 100px;
+    }
+
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+
+    .prijava { 
+        background: #b35900;
+        margin-top: 30px;
+        float:left;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        width: 80%;
+        height: 200px;
+        border-radius: 30px;
+        overflow: no-display;
+        clear:both;
+    }
+
+    .knjiznice {
+        display: inline;
+        float:left;
+        background: #b35900;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        width: 85%;
+        height: 15px;
+        border-radius: 30px;
+        overflow: no-display;
+    }
+
+    .knjiznice2 {
+        display: inline;
+        float:left;
+        background: #b35900;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        width: 85%;
+        height: 120px;
+        border-radius: 30px;
+        overflow: auto;
+    }
+
+    .h3 {
+        background-color: #333333;
+        margin-top: -5%;
+        text-align: center;
+        color: white;
+    }
+    .unos{
+        border-radius: 10px;
+        height: 25px;
+        border-color: #333333;
+        clear: both;
+        float:left;
+
+    }
+
+    .labele{
+        font-size: 12pt;
+        width: 40%;
+        font-size: 14pt;
+        clear:both;
+        white-space: pre;
+    }
+
+    p{float:left;}
+
+
+    .h4{
+        background-color: #333333;
+        font-size: 26pt;
+        text-align: center;
+        color: white;
+    }
+
+    .glavnasekcija{
+        background-color: #e6e6e6;
+        float: left;
+        height: 100%;
+        overflow: auto;
+
+    }
+
+    #submit1{
+        height: 25px;
+        float:left;
+        width: 40%;
+        clear:both;
+        border-radius: 10px;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+
+    #reset1{
+        clear:both;
+        height: 25px;
+        float:left;
+        width: 40%;
+        border-radius: 10px;
+        margin-left: 10%;
+    }
+    
+    .g-recaptcha {
+        transform:scale(0.77);
+        transform-origin:0 0;
+        margin: 0 auto;
+        width: 304px;
+    }
+}
+
+@media screen and (max-width:640px) and (max-height:360px){
+    header {
+        background-image: url("../img/logo.png");
+        background-size: 90px 90px;
+        background-color: #333333;
+        color: white;
+        background-repeat: no-repeat;
+        text-align: match-parent;
+        font-family: serif;
+        font-size: 15pt;
+        float: left;
+        width: 100%;
+        height: 100px;
+    }
+
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+
+    .prijava { 
+        background: #b35900;
+        margin-top: 30px;
+        float:left;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        width: 80%;
+        height: 200px;
+        border-radius: 30px;
+        overflow: no-display;
+        clear:both;
+    }
+
+    .knjiznice {
+        display: inline;
+        float:left;
+        background: #b35900;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        width: 85%;
+        height: 15px;
+        border-radius: 30px;
+        overflow: no-display;
+    }
+
+    .knjiznice2 {
+        display: inline;
+        float:left;
+        background: #b35900;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        width: 85%;
+        height: 120px;
+        border-radius: 30px;
+        overflow: auto;
+    }
+
+    .h3 {
+        background-color: #333333;
+        margin-top: -5%;
+        text-align: center;
+        color: white;
+    }
+    .unos{
+        border-radius: 10px;
+        height: 25px;
+        border-color: #333333;
+        clear: both;
+        float:left;
+
+    }
+
+    .labele{
+        font-size: 12pt;
+        width: 40%;
+        font-size: 14pt;
+        clear:both;
+        white-space: pre;
+    }
+
+    p{float:left;}
+
+    .registracija { 
+        background: #b35900;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        border-radius: 0px;
+        float:right;
+        position: static;
+        width    : 105%;
+        height   : 90%;
+        overflow: auto;
+        clear: both;
+    }
+
+    .h4{
+        background-color: #333333;
+        font-size: 26pt;
+        text-align: center;
+        color: white;
+    }
+
+    .unosRegistracija{
+        border-radius: 10px;
+        height: 25px;
+        width: 50%;
+        border-color: #333333;
+        float:left;
+    }
+
+    .labeleRegistracija{
+        width:145px;
+        clear:left;
+        float:left;
+        text-align:right;
+        padding-right:10px;
+        font-size: 14pt;
+    }
+
+    .glavnasekcija{
+        background-color: #e6e6e6;
+        float: left;
+        height: 110%;
+        overflow: auto;
+
+    }
+
+    #submit1{
+        height: 25px;
+        float:left;
+        width: 40%;
+        clear:both;
+        border-radius: 10px;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+
+    #reset1{
+        clear:both;
+        height: 25px;
+        float:left;
+        width: 40%;
+        border-radius: 10px;
+        margin-left: 10%;
+    }
+
+    .g-recaptcha {
+        transform:scale(0.77);
+        transform-origin:0 0;
+        margin: 0 auto;
+        width: 304px;
+    }
+
+}
+@media screen and (max-width:800px) and (max-height:1280px){
+    header {
+        background-image: url("../img/logo.png");
+        background-size: 90px 90px;
+        background-color: #333333;
+        color: white;
+        background-repeat: no-repeat;
+        text-align: match-parent;
+        font-family: serif;
+        font-size: 15pt;
+        float: left;
+        width: 100%;
+        height: 100px;
+    }
+
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+
+    .prijava { 
+        background: #b35900;
+        margin-top: 30px;
+        float:left;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        width: 80%;
+        height: 200px;
+        border-radius: 30px;
+        overflow: no-display;
+        clear:both;
+    }
+
+    .knjiznice {
+        display: inline;
+        float:left;
+        background: #b35900;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        width: 85%;
+        height: 15px;
+        border-radius: 30px;
+        overflow: no-display;
+    }
+
+    .knjiznice2 {
+        display: inline;
+        float:left;
+        background: #b35900;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        width: 85%;
+        height: 120px;
+        border-radius: 30px;
+        overflow: auto;
+    }
+
+    .h3 {
+        background-color: #333333;
+        margin-top: -5%;
+        text-align: center;
+        color: white;
+    }
+    .unos{
+        border-radius: 10px;
+        height: 25px;
+        border-color: #333333;
+        clear: both;
+        float:left;
+
+    }
+
+    .labele{
+        font-size: 12pt;
+        width: 40%;
+        font-size: 14pt;
+        clear:both;
+        white-space: pre;
+    }
+
+    p{float:left;}
+
+    .registracija { 
+        background: #b35900;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        border-radius: 0px;
+        float:right;
+        position: static;
+        width    : 105%;
+        overflow: auto;
+        clear: both;
+    }
+
+    .h4{
+        background-color: #333333;
+        font-size: 26pt;
+        text-align: center;
+        color: white;
+    }
+
+    .unosRegistracija{
+        border-radius: 10px;
+        height: 25px;
+        width: 50%;
+        border-color: #333333;
+        float:left;
+    }
+
+    .labeleRegistracija{
+        width:200px;
+        clear:left;
+        float:left;
+        text-align:right;
+        padding-right:50px;
+        font-size: 14pt;
+    }
+
+    .glavnasekcija{
+        background-color: #e6e6e6;
+        float: left;
+        height: 100%;
+        overflow: auto;
+
+    }
+
+    #submit1{
+        height: 25px;
+        float:left;
+        width: 40%;
+        clear:both;
+        border-radius: 10px;
+        margin-top: 2%;
+        margin-left: 30%;
+    }
+
+    #reset1{
+        clear:both;
+        height: 25px;
+        float:left;
+        width: 40%;
+        border-radius: 10px;
+        margin-left: 30%;
+    }
+
+    .g-recaptcha {
+        transform:scale(0.77);
+        transform-origin:0 0;
+        margin: 0 auto;
+        width: 304px;
+    }
+}
+
+@media screen and (max-width:1280px) and (max-height:800px){
+    header {
+        background-image: url("../img/logo.png");
+        background-size: 90px 90px;
+        background-color: #333333;
+        color: white;
+        background-repeat: no-repeat;
+        text-align: match-parent;
+        font-family: serif;
+        font-size: 15pt;
+        float: left;
+        width: 100%;
+        height: 100px;
+    }
+
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+
+    .prijava { 
+        background: #b35900;
+        margin-top: 30px;
+        float:left;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        width: 80%;
+        height: 200px;
+        border-radius: 30px;
+        overflow: no-display;
+        clear:both;
+    }
+
+    .knjiznice {
+        display: inline;
+        float:left;
+        background: #b35900;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        width: 85%;
+        height: 15px;
+        border-radius: 30px;
+        overflow: no-display;
+    }
+
+    .knjiznice2 {
+        display: inline;
+        float:left;
+        background: #b35900;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        width: 85%;
+        height: 120px;
+        border-radius: 30px;
+        overflow: auto;
+    }
+
+    .h3 {
+        background-color: #333333;
+        margin-top: -5%;
+        text-align: center;
+        color: white;
+    }
+    .unos{
+        float: left;
+        border-radius: 10px;
+        height: 25px;
+        width: 60%;
+        border-color: #333333;
+    }
+
+    .labele{
+        float:left;
+        width: 20%;
+        font-size: 14pt;
+    }
+
+    p{float:left;text-align: center}
+
+    .registracija { 
+        background: #b35900;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #333333; 
+        border-radius: 0px;
+        float:right;
+        position: static;
+        width    : 105%;
+        overflow: auto;
+        clear: both;
+    }
+
+    .h4{
+        background-color: #333333;
+        font-size: 26pt;
+        text-align: center;
+        color: white;
+    }
+
+    .unosRegistracija{
+        border-radius: 10px;
+        height: 25px;
+        width: 50%;
+        border-color: #333333;
+        float:left;
+    }
+
+    .labeleRegistracija{
+        width:200px;
+        clear:left;
+        float:left;
+        text-align:right;
+        padding-right:50px;
+        font-size: 14pt;
+    }
+
+    .glavnasekcija{
+        background-color: #e6e6e6;
+        float: left;
+        height: 100%;
+        overflow: auto;
+
+    }
+
+    #submit1{
+        height: 25px;
+        float:left;
+        width: 40%;
+        clear:both;
+        border-radius: 10px;
+        margin-top: 2%;
+        margin-left: 30%;
+    }
+
+    #reset1{
+        clear:both;
+        height: 25px;
+        float:left;
+        width: 40%;
+        border-radius: 10px;
+        margin-left: 30%;
+    }
+
+    .g-recaptcha {
+        transform:scale(0.77);
+        transform-origin:0 0;
+        margin: 0 auto;
+        width: 304px;
+    }
+}
+
+

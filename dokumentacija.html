@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Matija Lazar">
+        <meta name="keywords" content="FOI, WebDiP"> 
+        <link href ="css/matlazar.css" rel ="stylesheet" type="text/css">
+        <link href="css/matlazar_responsive.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src ="js/matlazar.js"></script>
+        <title>Knjižnica</title>
+    </head>
+    <body>
+        <header>
+            <h1>Knjižnica</h1>
+        </header>
+        <div id = "navigacija">
+            <nav>
+                <label for="show-menu" class="show-menu">☰ Izbornik</label>
+                <input type="checkbox" id="show-menu" role="button">
+                <ul id="menu">            
+                    <li><a href="index.php">Početna</a></li>
+                    <li><a class ="active" href = "dokumentacija.html">Dokumentacija</a></li>
+                    <li><a href = "o_autoru.html" >O autoru</a></li>
+                    <li  style="float:right"><a href ="registracija.php">Registracija</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="glavnasekcija">
+            <section>
+                <h3>Opis projekta</h3>
+                <hr>
+                <p>U projektu se radi o knjižnicama te je podijeljena na tri sloja.Na prvom sloju je neregistraini korisnik koji može vidjeti samo
+                    popis knjiga koje su najposuđivanje u pojedinoj knjižnici. Ukoliko je korisnik registiran ima mogućnost rezerviranja knjiga od korisnika ili od moderatora
+                    knjižnice. Također može lajkati knjigu,odnosno može označiti da mu se knjiga ne sviđa. Također ima mogućnost upload-nja slika na stranicu i dodijeljivati 
+                    slikama oznake. Treći sloj je moderator kojega administrator dodijeljuje knjižnici. On može kreirari zanrove knjiga za pojedinu knjižnicu te dodavati 
+                    knjige knjiznicama koje podržavaju žanr knjige. Također moderator može vidjeti aplikativnu statisku korisnika.Na najvišoj razini je administrator koji
+                    može popunjavati sve tablice te kao što je spomenuti dodavati knjižnicama moderator te blokirati odnosno deblokirati korisnika. On još ima uvid
+                    u dnevnik te statisku strancie</p>
+                <h3>Opis projektnog rješenja</h3>
+                <p>Projekt nije u potpunosti riješen te nije moguće izvršiti posudbu već samo rezervaciju knjiga. Običan korisnk ne može zbog toga vidjeti najposuđivanije
+                    knjige. Običan korisnik može rezervirati knjige od moderatora i od korisnika koji je već rezervirao knjigu od moderatora. Također, registrirani korisnik
+                    može ocijenjivati knjige te može postavljati svoje slike na stranicu. Moderator kreirak žanrove knjižnica i knjiga te vidi rezervacije koje je zaprimio. 
+                    Također može vidjeti koliko lajkova koja knjiga ima. Na kraju administrator može vidjeti dnevnik i statisku stranica te može kreirati najvažnije elemente. Također 
+                    može ažurirati tablice knjižnica i korisnik preko CSV datoteke</p>
+
+                <hr>
+                <h3>ERA i navigacijski dijagram</h3>
+                <figure>
+                    <a href ="img/slikabaze.png" target="_blank">
+                        <img src="img/slikabaze.png"  alt="ERA" width="800" height="500"></a>
+                    <figcaption>ERA model</figcaption>
+                </figure>
+                <hr>
+                <h3>Skripte</h3>
+                <p>
+                    <b>index.php:</b> Glavna skripta na kojoj se provjerava da li je postavljena sesija, ukoliko nije, prebacuje se na skriptu index.php gdje se može
+                    obaviti prijava, ali i sama registracija.
+                </p>
+                <p>
+                    <b>prijava.php</b> Na ovoj skripti postoji mogućnost prijave na index.php te se tu postavlja sesija i kolačić uspješnu prijavu. Ukoliko korisnik nije
+                    aktivirao račun ne može se prijaviti te mora preko svog mail-a aktivirati račun. Ukoliko je korisnik aktiviran i tri puta pogriješi lozinku tada on postaje blokiran
+                </p>
+                <p>
+                    <b>registracija.php</b> U ovo skripti je klasična forma za registraciju koja ima validaciju na razini klijena i na razini poslužitelja
+                </p>
+                <p>
+                    <b>CRUD.php i crud_csv.php</b> Ovo su dvije skripte koje služe za unos, ažuriranje i brisanje podataka iz više tablica. Također ovdje se
+                    nalazi forma za ažuriranje tablica pomoći CSV datoteke. CRUD.php služi kao vanjska skripta koja obrađuje podatke
+                </p>
+                <p>
+                    <b>aktivacija.php</b>Ova skripta se otvara priliko aktiviranja računa da se preusmjerava na prijavu.php gdje ispisuje poruku o uspješnoj ili
+                    neuspješnoj prijavi
+                </p>
+                <p>
+                    <b>baza_class.php</b> Skripta preuzta iz predavnanja te služi za spajanje na bazu, postavljanje upita, ažuriranje tablica i zatvaranje konekcije
+                </p>
+                <p>
+                    <b>blokiraj.php</b> Služi kod administratora da blokira korisnika. Skriptu poziva skripta korisnici.php gdje administrator može blokirati ili aktivirati 
+                    korisnikov račun.
+                </p>
+                <p>
+                    <b>dnevnik.php</b> Jednostavna skripta za ispis sadržaja iz relacije dnevnici iz phpmyadmin
+                </p>
+                <p>
+                    <b>dohvati_virtualno.php</b> Skripta koja služi za dohvaćanje pomaka virtualnog vremena. Naravno pomak dohvaća iz baze podataka
+                </p>
+                <p>
+                    <b>galerija.php</b> Skripta koja prikazuje galeriju slika. Ima formu za upload slike te dodavanje oznake samoj datoteci. Također na toj stranici 
+                    se odmah prikazuju postavljene slike te je slike moguće filtrirati po oznaci. Skripta poziva skriptu slike.php da bi se u bazi spremio naziv slike 
+                    i id korisnika koji je postavio sliku.Naravno sprema se i lozinka u bazu.
+                </p>
+                <p>
+                    <b>gradovi_knjiznice.php</b> Skripta koju poziva skripta korisnici.php. Ovdje se obrađuju podaci iz formi koje se nalaze u skripti korisnici.php te se
+                    podaci zapisuju u bazu.
+                </p>
+                <p>
+                    <b>knjige.php</b> Skripta na kojoj se nalaze forme na kojima se može postavljati dojam o knjizi. Poziva skriptu knjige_lajkovi.php kako
+                    bi se podatak zapisao u bazu podataka
+                </p>
+                <p>
+                    <b>knjige_kategorije_knjiznice.php</b> Skripta koja se poziva iz skripte moderator.php kada moderator dodaje nove knjige, zanrove, knjige
+                    u knjiznice i tako dalje. Također služi za pregledavanje aplikativne statistike lajkova.
+                </p>
+                <p>
+                    <b>knjige_lajkovi.php</b> Skripta koja zapisuje lajkove u bazu. Također postoji mogućnost da se dojam o knjizi obriše
+                </p>
+                <p>
+                    <b>konfiguracija.php</b> Ovdje se nalazi samo forma za postavljanje virtualnog vremena koja koristi skriptu virualno.php da bi to i učinila.
+                </p>
+                <p>
+                    <b>korime_mail_provjera.php</b> Skripte koje služe za provjeru zauzetosti korisničkog imena i email. Nadopunjuju Ajax
+                </p>
+                <p>
+                    <b>korisnici.php</b> Stranica na kojoj se blokiraju i aktiviraju korisnici, dodaju moderatori, knjižnice i gradovi.
+                </p>
+                <p>
+                    <b>logout.php</b> Skripta služi za odjavu i brisanje sesija te se vraća na prijavu.php
+                </p>
+                <p>
+                    <b>moderator.php</b> Na ovoj stranici se nalaze sve opcionalnosti koje moderator ima. Znači, moderator može vidjeti zajtjeve za rezervaciju,
+                    aplikativnu statistuku sviđa mi se ne sviđa mi se te može dodavati žanrove i knjige u knjižnice
+                </p>
+                <p>
+                    <b>posudba.php</b> Stranica na kojoj korisnik vidi zahtjeve za rezervaciju knjiga koje je on rezervirao te može preko formi rezervirati knjige
+                    od drugog korisnika i knjige od moderatora odnosno knjižnice
+                </p>
+                <p>
+                    <b>posudbe_skripta</b> Pomoćna skirpta iznad spomenutoj skripti kako bi se podaci mogli ažurirati i upisivati u bazi
+                </p>
+
+                <p>
+                    <b>slike.php</b> Pomoćna skripta skripti galerija.php koja postavlja sliku na server i upsiuje u bazu relevantne podatke
+                </p>
+
+                <p>
+                    <b>statistika.php</b> Stranica koja prikazuje administratoru posjećenost pojedine stranice i koji su se upiti najviše koristili nad bazom
+                </p>
+                <p>
+                    <b>uploader.php</b> Skripta koja služi za upload podataka iz CSV datoteke u bazu
+                </p>
+                <p>
+                    <b>virtualno.php</b> Skripta koja šalje pomak za virtualno vrijeme
+                </p>
+                <p>
+                    <b>zaboravljena_lozika.php</b> Skripta koja generira novu lozinku te je šalje na korisnikov mail
+                </p>
+                <hr>
+
+                <h3>Tuđi moduli</h3>
+                <p>
+                    <b>DataTables</b>
+                </p>
+                <p>
+                    <b>http://www.w3schools.com</b> Poslužio za većinu nejasnoća.
+                </p>
+                <p>
+                    <b>http://stackoverflow.com</b> Poslužio kod izrade padajućeg izbornika za responzivni dizajn
+                </p>   
+                <hr>
+            </section>
+        </div>
+        <div class="footer">
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+</html>
